@@ -16,7 +16,7 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
   }
 
   function handleLikeComment() {
-    // Sempre que formos atualizar uma informação e essa informação depende do valor que ela tinha anteriormente, ou seja, dela mesma, recomenda-se fazer a atualização usando esse padrão de funções
+    // Sempre que formos atualizar uma informaï¿½ï¿½o e essa informaï¿½ï¿½o depende do valor que ela tinha anteriormente, ou seja, dela mesma, recomenda-se fazer a atualizaï¿½ï¿½o usando esse padrï¿½o de funï¿½ï¿½es
     setLikeCount((state) => {
       return state + 1;
     });
@@ -24,7 +24,11 @@ export function Comment({ content, onDeleteComment }: CommentProps) {
 
   return (
     <div className={styles.comment}>
-      <Avatar hasBorder={false} src="https://github.com/diego3g.png" alt="" />
+      <Avatar 
+        hasBorder={false} 
+        src="https://github.com/diego3g.png" 
+        alt="" 
+      />
 
       <div className={styles.commentBox}>
         <div className={styles.commentContent}>
